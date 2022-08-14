@@ -19,16 +19,3 @@ window.Update += delegate {
 };
 
 window.Run();
-
-window = Window.Create(options);
-
-window.Load += delegate {
-	input = window.CreateInput();
-};
-
-window.Update += delegate {
-	window.Close();
-	window.Dispose();
-};
-
-window.Run();
